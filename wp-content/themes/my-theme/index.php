@@ -23,7 +23,7 @@ if ( have_posts() ) {
 }
 ?>
     <!--BANNER-->
-<section class="banner" style="background-image: url('<?php echo $banner['url']; ?>'); height: 50vh; background-repeat: no-repeat;">
+<section class="banner" style="background-image: url('<?php echo $banner_background_image['url']; ?>'); height: 50vh; background-repeat: no-repeat;">
   <p class="banner_contenu">
       <p class="banner_baseline"><?php the_field('banner_baseline'); ?></p>
       <p class="banner_title_brown"><?php the_field('banner_title_brown'); ?></p>
@@ -32,7 +32,13 @@ if ( have_posts() ) {
 </section>
 <!--/BANNER-->
     
-    <!--coder ici-->
+    <!--CONFERENCE-->
+<section class="text_bloc">
+    <p class="title_bloc"><?php the_field('title_bloc'); ?></p>
+      <p class="text_bloc_brown"><?php the_field('text_bloc_brown'); ?></p>
+      
+  
+</section>
 
 </div>
 
